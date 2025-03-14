@@ -1,0 +1,82 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    gap: 0.5rem;
+    width: 100%;
+    .title{
+        padding: 20px;
+        border-bottom: 1px solid #ddd;
+    }
+}
+.performanceStats {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  .statItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    position: relative;
+  }
+  
+  .label {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .change {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 0.3rem;
+  }
+  
+  .positive {
+    color: #4caf50;
+  }
+  
+  .negative {
+    color: #e53935;
+  }
+  
+  /* Vertical Divider on the right of each stat */
+  .divider {
+    height: 60%;
+    width: 1px;
+    background: #ddd;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Optional: Mobile responsive tweak */
+  @media (max-width: 768px) {
+    .performanceStats {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .statItem{
+        border-bottom: 1px solid #ddd;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+  
+    .divider {
+      display: none;
+    }
+  }
+  
